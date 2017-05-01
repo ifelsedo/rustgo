@@ -6,6 +6,8 @@ use std::cmp::Ordering;
 
 fn main() {
     println!("猜猜看");
+    println!("猜猜看");
+    println!("猜猜看");
 
     let secret_num = rand::thread_rng().gen_range(1, 101);
 
