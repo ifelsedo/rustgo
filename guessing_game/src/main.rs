@@ -36,7 +36,7 @@ fn main() {
         }
 
         if i >= 5 {
-            println!("You lose!");
+            println!("You lose! The secret number is {}.", secret_num);
             break;
         }
     }
