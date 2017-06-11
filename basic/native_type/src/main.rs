@@ -21,7 +21,7 @@ fn main() {
 
     // isize 可变长有符号整型
     // usize 可变长无符号整型
-    println!("isize 可变长度有符号整型 取值范围 {} ~ {}", isize::min_value(), isize::max_value());
+    // println!("isize 可变长度有符号整型 取值范围 {} ~ {}", isize::min_value(), isize::max_value());
 
     /*println!("i8 8位有符号整型 取值范围 {} ~ {}", i8::min_value(), i8::max_value());
     println!("u8 8位无符号整型 取值范围 {} ~ {}", u8::min_value(), u8::max_value());
@@ -31,11 +31,25 @@ fn main() {
     println!("u32 32位无符号整型 取值范围 {} ~ {}", u32::min_value(), u32::max_value());
     println!("i64 64位有符号整型 取值范围 {} ~ {}", i64::min_value(), i64::max_value());
     println!("u64 64位无符号整型 取值范围 {} ~ {}", u64::min_value(), u64::max_value());*/
+    assert_eq!(i8::max_value(), 127);
 
-    //
+    // 浮点型
+    // f32 32位单精度浮点型
+    // f64 64位双精度浮点型
+
+    use std::f32;
+
+    let nan = f32::NAN;
+    let f = 7.0_f32;
+
+    println!("{:?}", nan.is_nan());
+
+    println!("{:?}", !f.is_infinite());
+
+    assert!(nan.is_nan());
+    assert!(!f.is_nan());
 
     // let v = vec!['h', 'e', 'l', 'l', 'o'];
 
-    assert_eq!(i8::max_value(), 127);
 
 }
