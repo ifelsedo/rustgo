@@ -42,14 +42,19 @@ fn main() {
     let nan = f32::NAN;
     let f = 7.0_f32;
 
-    println!("{:?}", nan.is_nan());
+    // println!("{:?}", nan.is_nan());
 
-    println!("{:?}", !f.is_infinite());
+    // println!("{:?}", !f.is_infinite());
 
     assert!(nan.is_nan());
     assert!(!f.is_nan());
 
-    // let v = vec!['h', 'e', 'l', 'l', 'o'];
+    // array 数组 使用 [] 定义索引数组
+    let arr = vec!['h', 'e', 'l', 'l', 'o'];
 
+    // println!("{:?}", arr.len());
+    // println!("{}", arr[4]);
 
+    let a = &arr[2..];
+    println!("{}", a[2]);
 }
