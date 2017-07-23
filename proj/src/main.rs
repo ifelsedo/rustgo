@@ -1,14 +1,14 @@
 fn main() {
-    let a = "Mike Rust";
-    println!("string is {}", a);
-    let i: i32 = 3;
-    let j: i32 = 9;
-    println!("{} + {} = {}", i, j, num_sum(i, j));
+    let a = 2;
+    let b = a;
+    let c = b.clone() + a.clone();
+    println!("a={}, b={}, c={}", a, b, c);
 }
 
-fn num_sum(i: i32, j: i32) -> i32 {
+/*fn num_sum(i: i32, j:i32) -> i32
+{
     i + j
-}
+}*/
 
 /*fn diverges() -> ! {
     panic!("This function never returns!");

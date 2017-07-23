@@ -1,6 +1,7 @@
 /* Primitive Type Rust 原生类型 */
 
-fn main() {
+fn main()
+{
     // bool 布尔型
     /*let t = true;
     let f: bool = false;
@@ -57,4 +58,8 @@ fn main() {
 
     let a = &arr[2..];
     println!("{}", a[2]);
+
+    // 元组
+    let tup = (1, "premium", false, 'a');
+    println!("{:#?}", tup);
 }
