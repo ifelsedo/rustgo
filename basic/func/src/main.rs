@@ -7,9 +7,9 @@ fn main()
     bar();
 
     let s = String::from("hello world rust learn 2017 basic func src main");
-    let n: u64 = 6;
+    let n: u64 = 3;
     let a = get_word(&s, n);
-    println!("第 {} 个单词 {}", n, a);
+    println!("第 {} 个单词 \"{}\"", n, a);
 
     // let s: &str = "sjfsslad sdjfs. sadhufoe, ashdf";
     let s: String = String::from("sjfsslad sdjfs. sadhufoe, ashdf");
@@ -38,7 +38,7 @@ fn bar()
     println!("这是个函数");
 }
 
-fn get_word(s: &String, n: u64) -> &str
+fn get_word(s: &str, n: u64) -> &str
 {
     let bs = s.as_bytes();
     let l = s.len();

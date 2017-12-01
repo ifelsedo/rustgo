@@ -1,0 +1,6 @@
+[package]
+name = "constant"
+version = "0.1.0"
+authors = ["mccsy <mikerust@qq.com>"]
+
+[dependencies]
